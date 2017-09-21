@@ -1,0 +1,56 @@
+.latest{
+    background-color: navy;
+    position: absolute;
+    height: 20px;
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+    
+}
+.marquee{
+    overflow: hidden; /*no horizontal scrollbar*/
+    white-space: nowrap; /*no new line*/
+    font-size:15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+    height: 20px;
+    width: 82%;
+    
+    
+    -webkit-animation: marquee 50s linear infinite;
+    
+}
+.marquee img{
+    height: 20px;
+    width: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.marquee:hover{
+    -webkit-animation-play-state: paused
+}/* Make it move */
+
+@-webkit-keyframes marquee {
+    0%   { text-indent: 27.5em }
+    100% { text-indent: -105em }
+}
+
+.box{
+    border: 1px solid gray;
+    background-color: lightcyan;
+    width: 83%;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.box date{
+    font-size: 13px;
+    color: gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box NewsH{
+    
+}
